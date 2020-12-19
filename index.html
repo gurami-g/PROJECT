@@ -18,7 +18,7 @@
     <body style="background-color: #ccc">
         <div>
             <!--NAVBAR-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">მოგზაურობა</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,38 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">კონტაქტი</a>
+                                <div class="navbar bg-dark mr-auto py-1">
+                                    <button type="button" class="btn btn-sm btn-light mr-2" data-bs-toggle="modal" data-bs-target="#exampleModalkontact">
+                        კონტაქტი
+                        </button>
+                        
+                                    <div>
+                                        
+                                        <div class="modal fade" id="exampleModalkontact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">კონტაქტი</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" placeholder="სახელი" aria-label="Username" aria-describedby="basic-addon1">
+                                                      </div>                                                                                                                                                         
+                                                      <div class="input-group mb-3">                                                       
+                                                        <input type="text" class="form-control" id="basic-url"placeholder="მეილი" aria-describedby="basic-addon3">
+                                                      </div>                                                                                                                                                              
+                                                      <div class="input-group">                                                       
+                                                        <textarea class="form-control" aria-label="With textarea" placeholder="მოგვწერეთ"></textarea>                                                   
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-success" type="submit">გაგზავნა</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">შესახებ</a>
@@ -59,11 +90,11 @@
         </div>
         <!--LOGIN-->
         <div class="navbar bg-dark mr-auto py-1">
-            <button type="button" class="btn btn-sm btn-light mr-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-sm btn-light mr-2" data-bs-toggle="modal" data-bs-target="#exampleModalLogin">
 ლოგინი
 </button>
             <div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -73,32 +104,125 @@
 
                             <div class="modal-body">
                                 <form class="form-row col py-3 text-center text-light bg-dark">
-
+                                    <div class="mx-auto">
                                     <div class="row m-4 mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">მეილი</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1">
-
-                                    </div>
-                                    <div class="row m-4 mb-3">
-                                        <label for="inputPassword5" class="form-label">პაროლი</label>
-                                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                                        <div id="passwordHelpBlock" class="form-text">
+                                        <label for="validationServer01">მეილი</label>
+                                        <div class="input-group is-invalid">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
+                                            </div>
+                                            <input type="text" class="form-control "
+                                                aria-describedby="validatedInputGroupPrepend" required>
                                         </div>
                                     </div>
-
-                                    <div class="modal-footer">
-
-                                        <button type="button" class="btn btn-success" type="submit">შესვლა</button>
+                                    <div class="row m-4 mb-3">
+                                        <label for="validationServer01">პაროლი</label>
+                                        <input type="password" class="form-control " id="validationServer01" value=""
+                                            required>
+                                    </div>
+                                    <button class="btn btn-success mt-3" type="submit">შესვლა</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--LOGIN-->
-
             </div>
         </div>
+        
+                <!--LOGIN-->
+<!--REGISTER-->
+    <button type="button" class="btn btn-sm btn-light mr-2" data-bs-toggle="modal" data-bs-target="#exampleModalRegister">
+რეგისტრაცია
+</button>
+    <div>
+        <div class="modal fade" id="exampleModalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">რეგისტრაცია</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="form-row col py-3 text-center text-light bg-dark">
+                            <div class="mx-auto">
+                                <div class="row m-4 mb-3">
+                                    <label for="validationServer01">ზედმეტსახელი</label>
+                                    <input type="text" class="form-control " id="validationServer01" value=""
+                                        required>
+                                </div>
+                                <div class="row m-4 mb-3">
+                                    <label for="validationServer01">მეილი</label>
+                                    <div class="input-group is-invalid">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
+                                        </div>
+                                        <input type="text" class="form-control "
+                                            aria-describedby="validatedInputGroupPrepend" required>
+                                    </div>
+                                </div>
+                                <div class="row m-4 mb-3">
+                                    <label for="validationServer01">პაროლი</label>
+                                    <input type="password" class="form-control " id="validationServer01" value=""
+                                        required>
+                                </div>
+                                <div class="row m-4 mb-3">
+                                    <label for="validationServer02">გაიმეორეთ პაროლი</label>
+                                    <input type="password" class="form-control " id="validationServer02" value=""
+                                        required>
+
+                                </div>
+                                <div cLASS="row m-4 mb-3">
+                                    <label for="valitationserver03">რეგისტრაციის თარიღი</label>
+                                    <input type="date" class="form-control " id="validationServer03" value=""
+                                        required>
+                                </div>
+                                <div class="row m-4 mb-3">
+                                    <label for="validationCustom04">ქვეყანა</label>
+                                    <select class="custom-select" id="validationCustom04" required>
+                                        <option selected disabled value="">...</option>
+                                        <option>ამერიკა</option>
+                                        <option>ბოლივია</option>
+                                        <option>გერმანია</option>
+                                        <option>დანია</option>
+                                        <option>ეგვიპტე</option>
+                                        <option>ვიეტნამი</option>
+                                        <option>იტალია</option>
+                                        <option>საქართველო</option>
+                                        <option>კანადა</option>
+                                    </select>
+                                </div>
+                                <div class="row m-4 mb-3">
+                                    <label for="validationCustom05">ქალაქი</label>
+                                    <input type="text" class="form-control" id="validationCustom03" required>
+                                </div>
+                                <div class="row m-4 mb-3">
+                                    <label for="validationCustom06">ტელეფონის ნომერი:</label>
+                                    <input type="tel" class="form-control" id="validationCustom03"
+                                        placeholder="+995-000-000">
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
+                                            aria-describedby="invalidCheck3Feedback" required>
+                                        <label class="form-check-label" for="invalidCheck3">
+                                            ვეთანხმები საიტის პირობებს
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-success mt-3" type="submit">რეგისტრაცია</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+
+
+
+ <!--REGISTER-->
         <!--SLIDER-->
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
