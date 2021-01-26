@@ -194,85 +194,108 @@ aria-hidden="true">
  
 <div>
 <div class="contaniner">
-  <img src="https://source.unsplash.com/random/600x600?water" alt="">
-  <img src="https://source.unsplash.com/random/600x600?summer" alt="">
-  <img src="https://source.unsplash.com/random/600x600?plants" alt="">
-  <img src="https://source.unsplash.com/random/600x600?snow" alt="">
-  <img src="https://source.unsplash.com/random/600x600?roses" alt="">
-  <img src="https://source.unsplash.com/random/600x600?sky" alt="">
-  <img src="https://source.unsplash.com/random/600x600?nature" alt="">
-  <img src="https://source.unsplash.com/random/600x600?blossom" alt="">
-  <img src="https://source.unsplash.com/random/600x600?ice" alt="">
-  <img src="https://source.unsplash.com/random/600x600?spring" alt="">
+  <img src="https://source.unsplash.com/random/600x600?water" alt="" class="animatedImg">
+  <img src="https://source.unsplash.com/random/600x600?summer" alt=""class="animatedImg">
+  <img src="https://source.unsplash.com/random/600x600?plants" alt=""class="animatedImg">
+  <img src="https://source.unsplash.com/random/600x600?snow" alt=""class="animatedImg">
+  <img src="https://source.unsplash.com/random/600x600?roses" alt=""class="animatedImg">
+  <img src="https://source.unsplash.com/random/600x600?sky" alt=""class="animatedImg">
+  <img src="https://source.unsplash.com/random/600x600?nature" alt=""class="animatedImg">
+  <img src="https://source.unsplash.com/random/600x600?blossom" alt=""class="animatedImg">
+  <img src="https://source.unsplash.com/random/600x600?ice" alt=""class="animatedImg">
+  <img src="https://source.unsplash.com/random/600x600?spring" alt=""class="animatedImg">
  
 
 </div>
 
 <style>
-.contaniner {
-  position: relative;
-  flex-grow: 1;
-  margin: auto;
-  max-width: 1000px;
-  max-height: 1000px;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 2vmin;
-  justify-items: center;
-  align-items: center;
-}
-
-img {
-  z-index: 1;
-  grid-column: span 2;
-  max-width: 100%;
-  margin-bottom: -52%;
-  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  transition: all .25s;
-}
-img:nth-child(7n + 1) {
-  grid-column: 2 / span 2;
-}
-img:hover {
-  z-index: 2;
-  -webkit-transform: scale(2);
-          transform: scale(2);
-}
-</style>
+  .contaniner {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 1000px;
+    max-height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2vmin;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .unanimatedImg {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: all .25s;
+  }
+  .unanimatedImg:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+  }
+  .animatedImg {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: all .25s;
+  }
+  .animatedImg:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+  }
+  .animatedImg:hover {
+    z-index: 2;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  </style>
 <div class="container-fluid">
         <!--CONTAINER-->
         <div class="container">
             <div class="row py-2 ml-4">
             <div class=" card col-sm-12 col-xl pt-2 mr-2 mb-1" style="width: 10rem;">
-                <img src="images/1.jpg" class="card-img-top" alt="...">
+                <img src="images/7.jpg" class="card-img-top" alt="..." style="width:500px; height:400px;">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Neoclassicism</h5>
                   <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="neo.html" class="btn  btn-outline-primary">more</a>
                 </div>
               </div>
               <div class="card col-sm-12 col-xl pt-2 mr-2 mb-1" style="width: 10rem;">
-                <img src="images/2.jpg" class="card-img-top" alt="...">
+                <img src="images/2.jpg" class="card-img-top" alt="..."style="width:500px; height:400px; ">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">ART</h5>
                   <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="HTML/ART.html" class="btn btn-outline-primary ">more</a>
                 </div>
               </div>
             </div>
             <div class="row py-2 ml-4">
               <div class="card col-sm-12 col-xl pt-2 mr-2 mb-1" style="width: 10rem;">
-                <img src="images/3.jpg" class="card-img-top" alt="...">
+                <img src="images/10.jpg" class="card-img-top" alt="..."style="width:500px; height:400px;">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Modernism</h5>
                   <p class="card-text"></p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="modern.html" class="btn btn-outline-primary">more</a>
                 </div>
               </div>
+              <div class="card col-sm-12 col-xl pt-2 mr-2 mb-1" style="width: 10rem;">
+                <img src="images/14.jpg" class="card-img-top" alt="..."style="width:500px; height:400px;">
+                <div class="card-body">
+                  <h5 class="card-title">Romanticism</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-outline-primary">more</a>
+                </div>
+              </div>
+            </div>
             </div>
            
 </div>
